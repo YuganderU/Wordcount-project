@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Words and their count</title>
+    </head>
+    <body>
+        <h1>There are {{count}} words in your text.</h1>
+        <h3>Text you have entered : </h3>
+        {{fulltext}}
+        <h3>Words and their count : </h3>
+        {%for key, value in worddictionary%}
+        <p>{{key}} : {{value}}</p>
+        {%endfor%}
+    </body>
+</html>
